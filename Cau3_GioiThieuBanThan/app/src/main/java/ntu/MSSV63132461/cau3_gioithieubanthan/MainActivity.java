@@ -75,10 +75,10 @@ public class MainActivity extends AppCompatActivity {
                     sothich += cbcd.getText().toString()+"\n";
                 }
                 String bosung = edtbosung.getText().toString();
-                String tonghop = hoten+"\n"+CCCD+"\n"+bangcap+"\n"+sothich+"\n";
-                        tonghop = "----------Thông Tin Bổ Sung----------\n";
-                        tonghop += bosung+"\n";
-                        tonghop += "-----------------------------------";
+                String tonghop = hoten + "\n" + CCCD + "\n" + bangcap + "\n" + sothich + "\n";
+                tonghop += "----------Thông Tin Bổ Sung----------\n";
+                tonghop += bosung + "\n";
+                tonghop += "-----------------------------------";
                 AlertDialog.Builder mydialog = new AlertDialog.Builder(MainActivity.this);
                 mydialog.setTitle("Thông Tin Cá Nhân");
                 mydialog.setMessage(tonghop);
