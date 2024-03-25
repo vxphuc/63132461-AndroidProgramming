@@ -1,5 +1,6 @@
 package ntu.MSSV63132461.cau3_gioithieubanthan;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -59,7 +61,34 @@ public class MainActivity extends AppCompatActivity {
                 RadioButton radselect = findViewById(idselect);
                 String bangcap = radselect.getText().toString();
 
-
+                String sothich = "";
+                if (cbds.isChecked())
+                {
+                    sothich += cbds.getText().toString()+"\n";
+                }
+                if (cbdb.isChecked())
+                {
+                    sothich += cbdb.getText().toString()+"\n";
+                }
+                if (cbcd.isChecked())
+                {
+                    sothich += cbcd.getText().toString()+"\n";
+                }
+                String bosung = edtbosung.getText().toString();
+                String tonghop = hoten+"\n"+CCCD+"\n"+bangcap+"\n"+sothich+"\n";
+                        tonghop = "----------Thông Tin Bổ Sung----------\n";
+                        tonghop += bosung+"\n";
+                        tonghop += "-----------------------------------";
+                AlertDialog.Builder mydialog = new AlertDialog.Builder(MainActivity.this);
+                mydialog.setTitle("Thông Tin Cá Nhân");
+                mydialog.setMessage(tonghop);
+                mydialog.setPositiveButton("ĐÓNG", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        dialogInterface.cancel();
+                    }
+                });
+                mydialog.create().show();
             }
         });
     }
