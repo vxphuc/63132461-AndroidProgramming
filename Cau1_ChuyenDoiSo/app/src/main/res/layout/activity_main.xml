@@ -1,174 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mau_nen"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteX="14dp"
-    tools:layout_editor_absoluteY="14dp">
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#18D31F"
+        android:text="Chương Trình Chuyển Đổi Số"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="85dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="76dp"
-            android:text="Số thập phân"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="83dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="32dp"
-            android:text="Số nhị phân"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="36dp"
-            android:text="Số bát phân"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="81dp"
-            android:layout_height="47dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="36dp"
-            android:text="Số thập lục phân"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-        <EditText
-            android:id="@+id/edttp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="72dp"
-            android:ems="10"
-            android:inputType="text"
-            app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_weight="1"
+            android:text="Số Nhị Phân:" />
 
         <EditText
             android:id="@+id/edtnp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="24dp"
+            android:layout_weight="1"
             android:ems="10"
-            android:inputType="text"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/edttp" />
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Số Bát Phân  " />
 
         <EditText
             android:id="@+id/edtbp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="44dp"
+            android:layout_weight="1"
             android:ems="10"
-            android:inputType="text"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/edtnp" />
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thập Lục Phân" />
 
         <EditText
             android:id="@+id/edttlp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="36dp"
+            android:layout_weight="1"
             android:ems="10"
-            android:inputType="text"
-            app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toBottomOf="@+id/edtbp" />
+            android:inputType="text" />
+    </LinearLayout>
 
-        <RadioButton
-            android:id="@+id/rdbbp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginBottom="124dp"
-            android:text="Số bát phân"
-            android:onClick="batphan"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <RadioButton
-            android:id="@+id/rdbtlp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="84dp"
-            android:layout_marginBottom="124dp"
-            android:text="Số thập lục phân"
-            android:onClick="thaplucphan"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/rdbbp" />
-
-        <RadioButton
-            android:id="@+id/rdbtp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginBottom="40dp"
-            android:text="Số thập phân"
-            android:onClick="thapphan"
-            app:layout_constraintBottom_toTopOf="@+id/rdbbp"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <RadioButton
-            android:id="@+id/rdbnp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="44dp"
-            android:layout_marginBottom="40dp"
-            android:text="Số nhị phân"
-            android:onClick="nhiphan"
-            app:layout_constraintBottom_toTopOf="@+id/rdbtlp"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="24dp"
-            android:text="="
-            android:onClick="kq"
-            app:layout_constraintBottom_toTopOf="@+id/rdbnp"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:layout_weight="1"
+            android:text="Số Thập Phân" />
 
         <EditText
-            android:id="@+id/edtnhap"
+            android:id="@+id/edttp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="28dp"
+            android:layout_weight="1"
             android:ems="10"
-            android:inputType="text"
-            app:layout_constraintBottom_toTopOf="@+id/rdbtp"
-            app:layout_constraintEnd_toStartOf="@+id/button" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:inputType="text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="149dp"
+        android:layout_gravity="center"
+        android:text="Chuyển đổi" />
+</LinearLayout>
