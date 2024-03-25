@@ -87,6 +87,24 @@ public class MainActivity extends AppCompatActivity {
         btu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int chiso = Integer.parseInt(edtcs.getText().toString());
+                String malop = edtml.getText().toString();
+                ContentValues myvalue = new ContentValues();
+                myvalue.put("chiso", chiso);
+                int n = mydatabase.update("tbllop", myvalue, "malop = ?", new String[]{malop});
+                String msg = "";
+                if (n == 0)
+                {
+                    msg = "No record Update";
+                }else {
+                    msg = n +"record is Update";
+                }
+                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+            }
+        });
+        btq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 
             }
         });
