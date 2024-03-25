@@ -25,6 +25,30 @@ public class MainActivity extends AppCompatActivity {
         edttlp = findViewById(R.id.edttlp);
         edttp = findViewById(R.id.edttp);
         button = findViewById(R.id.button);
-        
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String decimalStr = edttp.getText().toString();
+                if (decimalStr.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Vui lòng nhập số thập phân", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                try {
+                    int decimal = Integer.parseInt(decimalStr);
+
+                    String binary = Integer.toBinaryString(decimal);
+                    String octal = Integer.toOctalString(decimal);
+                    String hexadecimal = Integer.toHexString(decimal);
+
+                    edtnp.setText(binary);
+                    edtbp.setText(octal);
+                    edttlp.setText(hexadecimal);
+                } catch (NumberFormatException e) {
+                    Toast.makeText(MainActivity.this, "Số thập phân không hợp lệ", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
     }
 }
