@@ -6,168 +6,169 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mau_nen"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="14dp"
+    tools:layout_editor_absoluteY="14dp">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="85dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="76dp"
+            android:text="Số thập phân"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="98dp"
-            android:layout_height="35dp"
-            android:text="Số nhị phân:"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.17"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="153dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="98dp"
-            android:layout_height="35dp"
-            android:text="Số bát phân:"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.17"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="232dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="111dp"
-            android:layout_height="33dp"
-            android:text="Số thập lục phân:"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.187"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="305dp" />
-
-        <Button
-            android:id="@+id/btom"
-            android:layout_width="65dp"
-            android:layout_height="51dp"
-            android:layout_marginEnd="24dp"
-            android:text="="
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="439dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="98dp"
-            android:layout_height="35dp"
-            android:text="Số thập phân:"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.175"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="72dp" />
-
-        <RadioButton
-            android:id="@+id/btbp"
-            android:layout_width="86dp"
-            android:layout_height="37dp"
-            android:text="Số Bát phân"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="490dp" />
-
-        <RadioButton
-            android:id="@+id/btnp"
-            android:layout_width="86dp"
-            android:layout_height="37dp"
+            android:layout_width="83dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp"
             android:text="Số nhị phân"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="442dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="36dp"
+            android:text="Số bát phân"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="81dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="36dp"
+            android:text="Số thập lục phân"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <EditText
             android:id="@+id/edttp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="65dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="72dp"
             android:ems="10"
             android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/edtnp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="65dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
             android:ems="10"
             android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.895"
             app:layout_constraintStart_toEndOf="@+id/textView2"
-            tools:layout_editor_absoluteY="143dp" />
+            app:layout_constraintTop_toBottomOf="@+id/edttp" />
 
         <EditText
             android:id="@+id/edtbp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="44dp"
             android:ems="10"
             android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            tools:layout_editor_absoluteY="222dp" />
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/edtnp" />
 
         <EditText
             android:id="@+id/edttlp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="36dp"
             android:ems="10"
             android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            tools:layout_editor_absoluteY="293dp" />
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/edtbp" />
 
-        <RadioGroup
+        <RadioButton
+            android:id="@+id/rdbbp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="41dp"
-            tools:layout_editor_absoluteY="389dp" />
+            android:layout_marginStart="52dp"
+            android:layout_marginBottom="124dp"
+            android:text="Số bát phân"
+            android:onClick="batphan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <RadioButton
-            android:id="@+id/bttp"
-            android:layout_width="85dp"
-            android:layout_height="42dp"
-            android:layout_marginEnd="290dp"
-            android:text="Số thập phân"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="393dp" />
-
-        <RadioButton
-            android:id="@+id/bttlp"
-            android:layout_width="108dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="285dp"
+            android:id="@+id/rdbtlp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginBottom="124dp"
             android:text="Số thập lục phân"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="535dp" />
+            android:onClick="thaplucphan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rdbbp" />
+
+        <RadioButton
+            android:id="@+id/rdbtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginBottom="40dp"
+            android:text="Số thập phân"
+            android:onClick="thapphan"
+            app:layout_constraintBottom_toTopOf="@+id/rdbbp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rdbnp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="40dp"
+            android:text="Số nhị phân"
+            android:onClick="nhiphan"
+            app:layout_constraintBottom_toTopOf="@+id/rdbtlp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="24dp"
+            android:text="="
+            android:onClick="kq"
+            app:layout_constraintBottom_toTopOf="@+id/rdbnp"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <EditText
-            android:id="@+id/edtkq"
-            android:layout_width="188dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="30dp"
+            android:id="@+id/edtnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="28dp"
             android:ems="10"
             android:inputType="text"
-            android:text="nhập số"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="445dp" />
-
+            app:layout_constraintBottom_toTopOf="@+id/rdbtp"
+            app:layout_constraintEnd_toStartOf="@+id/button" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
