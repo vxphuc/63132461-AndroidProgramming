@@ -99,14 +99,12 @@
             android:text="INSERT" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
-            android:insetBottom="4dp"
-            android:text="DELETE"
-            app:iconPadding="8sp" />
+            android:text="DELETE" />
     </LinearLayout>
 
     <LinearLayout
@@ -130,4 +128,9 @@
             android:layout_weight="1"
             android:text="QUERY" />
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
