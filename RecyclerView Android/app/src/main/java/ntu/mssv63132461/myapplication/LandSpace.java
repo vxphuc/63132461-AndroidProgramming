@@ -23,5 +23,5 @@ public class LandSpace {
         Image = image;
         Caption = caption;
     }
-    
+
 }
