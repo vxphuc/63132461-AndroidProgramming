@@ -29,11 +29,11 @@ public class MainActivity extends AppCompatActivity {
     }
     ArrayList<LandSpace> getDataForRecylerView(){
         ArrayList<LandSpace> dsDulieu = new ArrayList<LandSpace>();
-        LandSpace landSpace1 = new LandSpace("OIP", "Thap Ha Noi");
+        LandSpace landSpace1 = new LandSpace("thaphanoi", "Thap Ha Noi");
         dsDulieu.add(landSpace1);
         dsDulieu.add(new LandSpace("thaptram", "Thap Tram Huong Nha Trang"));
-        dsDulieu.add(new LandSpace("R", "Ho Xuan Huong Da Lat"));
-        dsDulieu.add(new LandSpace("cau_vang", "Cau Vang Da Nang"));
+        dsDulieu.add(new LandSpace("hoxuanhuong", "Ho Xuan Huong Da Lat"));
+        dsDulieu.add(new LandSpace("cauvang", "Cau Vang Da Nang"));
 
         return dsDulieu;
     }
