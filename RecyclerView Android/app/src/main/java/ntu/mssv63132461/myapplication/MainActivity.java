@@ -7,18 +7,29 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
+    Adapter adapter;
+    ArrayList<LandSpace> recylerViewData;
+    RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        recylerViewData = getDataForRecylerView();
+        recyclerView = findViewById(R.id.Rccland);
+    }
+    ArrayList<LandSpace> getDataForRecylerView(){
+        ArrayList<LandSpace> dsDulieu = new ArrayList<LandSpace>();
+        LandSpace landSpace1 = new LandSpace("OIP", "Thap Ha Noi");
+        dsDulieu.add(landSpace1);
+        dsDulieu.add(new LandSpace("thaptram", "Thap Tram Huong Nha Trang"));
+        dsDulieu.add(new LandSpace("R", "Ho Xuan Huong Da Lat"));
+        dsDulieu.add(new LandSpace("cau_vang", "Cau Vang Da Nang"));
+
+        return dsDulieu;
     }
 }
