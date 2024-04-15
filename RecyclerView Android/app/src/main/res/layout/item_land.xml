@@ -16,7 +16,7 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <TextView
-        android:id="@+id/textViewcaption"
+        android:id="@+id/tvcaption"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:text="TextView"
