@@ -30,7 +30,7 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnopen"
         android:layout_width="178dp"
         android:layout_height="131dp"
         android:layout_gravity="center"
