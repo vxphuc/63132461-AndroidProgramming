@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/maunen"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFC107"
+        android:text="MTT60-NTU QUIZ"
+        android:textAlignment="center"
+        android:textColor="#020000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:text="Màng Hình Chính"
+        android:paddingTop="60dp"
+        android:textAlignment="center"
+        android:textColor="#130101"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="287dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="Đăng Nhập"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+</LinearLayout>
