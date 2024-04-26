@@ -11,8 +11,17 @@
         android:layout_height="match_parent"
         android:background="#F6F6F5"
         android:gravity="center"
-        android:text="ProfilePage"
-        android:textSize="45sp"
+        android:text="Course Fragment"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#8BC34A"
+        android:text="GFG BottomNavigationView"
+        android:textColor="#FDFDFD"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
 </FrameLayout>
