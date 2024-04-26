@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:title="algorithm"
+        android:icon="@drawable/baseline_border"/>
+    <item
+        android:id="@+id/secondFragment"
+        android:title="course"
+        android:icon="@drawable/baseline_account_balance" />
+    <item
+        android:id="@+id/endFragment"
+        android:title="profile"
+        android:icon="@drawable/baseline_account"/>
+</menu>
