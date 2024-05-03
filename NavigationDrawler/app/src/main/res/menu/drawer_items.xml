@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/menu"
+        android:id="@+id/navMenu"
+        android:title="Menu"/>
+    <item
+        android:icon="@drawable/delete"
+        android:id="@+id/navDelete"
+        android:title="Delete"/>
+    <item
+        android:icon="@drawable/option"
+        android:id="@+id/navOption"
+        android:title="Option"/>
+    <item
+        android:icon="@drawable/share"
+        android:id="@+id/navShare"
+        android:title="Share"/>
+    <item
+        android:icon="@drawable/contact"
+        android:id="@+id/navContact"
+        android:title="Contact"/>
+</menu>
