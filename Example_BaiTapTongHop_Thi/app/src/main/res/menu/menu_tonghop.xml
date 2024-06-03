@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@android:drawable/radiobutton_off_background"
+        android:title="welcome" />
+    <item
+        android:id="@+id/cau1"
+        android:icon="@android:drawable/star_big_on"
+        android:title="Item" />
+    <item
+        android:id="@+id/cau2"
+        android:icon="@android:drawable/star_big_on"
+        android:title="Item" />
+    <item
+        android:id="@+id/cau3"
+        android:icon="@android:drawable/star_big_on"
+        android:title="Item" />
+    <item
+        android:id="@+id/cau4"
+        android:icon="@android:drawable/star_big_on"
+        android:title="Item" />
+</menu>
